@@ -78,6 +78,7 @@
             <descriptor>src/main/assembly/job.xml</descriptor>
             <descriptor>src/main/assembly/examples.xml</descriptor>
             <descriptor>src/main/assembly/dist.xml</descriptor>
+            <descriptor>src/main/assembly/miniex.xml</descriptor>
           </descriptors>
         </configuration>
       </plugin>
