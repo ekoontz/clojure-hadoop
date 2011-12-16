@@ -35,7 +35,7 @@ VersionMismatchException)))
 Decompressor BlockCompressorStream BlockDecompressorStream CodecPool
 CompressionCodecFactory CompressionInputStream CompressionOutputStream
 CompressorStream DecompressorStream DefaultCodec GzipCodec
-GzipCodec$GzipInputStream GzipCodec$GzipOutputStream)))
+ GzipCodec$GzipOutputStream)))
 
 (defn import-fs 
   "Imports all classes/interfaces/exceptions from the package
@@ -44,7 +44,7 @@ GzipCodec$GzipInputStream GzipCodec$GzipOutputStream)))
   (import '(org.apache.hadoop.fs PathFilter PositionedReadable
 Seekable Syncable BlockLocation BufferedFSInputStream
 ChecksumFileSystem ContentSummary DF DU FileStatus FileSystem
-FileSystem$Statistics FileUtil FileUtil$HardLink FilterFileSystem
+FileSystem$Statistics FileUtil HardLink FilterFileSystem
 FSDataInputStream FSDataOutputStream FSInputChecker FSInputStream
 FSOutputSummer FsShell FsUrlStreamHandlerFactory HarFileSystem
 InMemoryFileSystem LocalDirAllocator LocalFileSystem Path

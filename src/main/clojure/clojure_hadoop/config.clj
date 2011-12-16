@@ -2,7 +2,7 @@
   (:require [clojure-hadoop.imports :as imp]
             [clojure-hadoop.load :as load])
   (:import (org.apache.hadoop.io.compress
-            DefaultCodec GzipCodec LzoCodec)))
+            DefaultCodec GzipCodec)))
 
 ;; This file defines configuration options for clojure-hadoop.  
 ;;
@@ -175,10 +175,6 @@
    (FileOutputFormat/setOutputCompressorClass
     jobconf GzipCodec)
 
-   (= "lzo" (as-str value))
-   (FileOutputFormat/setOutputCompressorClass
-    jobconf LzoCodec)
-
    :else
    (FileOutputFormat/setOutputCompressorClass
     jobconf (Class/forName value))))
@@ -233,7 +229,7 @@ Other available options are:
  -name              Job name
  -replace           If \"true\", deletes output dir before start
  -compress-output   If \"true\", compress job output files
- -output-compressor Compression class or \"gzip\",\"lzo\",\"default\"
+ -output-compressor Compression class or \"gzip\",\"default\"
  -compression-type  For seqfiles, compress \"block\",\"record\",\"none\"
 "))
 
